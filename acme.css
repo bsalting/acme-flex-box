@@ -1,15 +1,11 @@
 * {
   box-sizing: border-box;
+  color: black;
 }
 
 body {
   margin: 0;
   font-family: Helvetica;
-}
-
-p {
-  color: #252525;
-  line-height: 1em;
 }
 
 h1 {
@@ -20,14 +16,16 @@ h1 {
 h2 {
   font-size: 1.3em;
   font-weight: bold;
-  color: darkgrey;
+  color: dimgray;
   margin-left: 8vw;
 }
 
-h3 {
+h3,
+h4 {
   font-size: 1.1em;
   font-weight: bold;
-  color: darkgrey;
+  color: dimgray;
+  margin-left: 10px;
 }
 
 header {
@@ -61,4 +59,89 @@ nav {
 
 nav div:first-child {
   font-weight: bold;
+}
+
+#fname,
+#lname,
+#dept-dropdown {
+  width: 20vw;
+  position: relative;
+}
+
+label {
+  width: 10vw;
+  display: inline-block;
+  color: dimgray;
+  margin: 10px;
+}
+
+option {
+  color: dimgray;
+}
+
+#users-form {
+  width: 35vw;
+  border: gray 5px solid;
+  padding-bottom: 20px;
+  border-radius: 0.3em;
+  margin: auto;
+}
+
+#users-form input,
+select {
+  margin: 10px;
+}
+
+#action-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5vh;
+}
+
+#action-btns button {
+  margin: 0.3vw;
+  border-style: none;
+}
+
+#save-btn {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#user-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 5vh;
+}
+
+.card-item {
+  flex: 0 0 calc(33% - 20px);
+  text-align: center;
+  padding: 5px;
+  border: black solid 1px;
+  border-radius: 1em;
+  box-shadow: 3px 5px #888888;
+  margin: 10px;
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 4vw 6vw;
+  }
+  .card-item {
+    flex: 0 0 calc(100% - 20px);
+  }
+  #action-btns {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10vw 0 10vw;
+  }
 }

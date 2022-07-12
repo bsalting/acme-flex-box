@@ -20,15 +20,80 @@
           <a href="#">Departments</a>
         </div>
         <div class="nav-item">
-          <a href="">Contacts</a>
+          <a href="#">Contacts</a>
         </div>
       </nav>
     </header>
+
     <section id="users-tab">
       <h2>Users</h2>
     </section>
+
     <section id="users-form">
-      <h3>Create User</h3>
+      <div id="form-container">
+        <h3>Create User</h3>
+        <form id="form-items">
+          <div>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John" />
+          </div>
+          <div>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Doe" />
+          </div>
+          <div>
+            <label for="dept">Department</label>
+            <select id="dept-dropdown" name="dept">
+              <option value="none">-- None --</option>
+              <option value="sales">Marketing</option>
+              <option value="mktg">Sales</option>
+              <option value="tech">Operations</option>
+              <option value="care">Servicing</option>
+            </select>
+            <div id="action-btns">
+              <button id="clr-btn">Clear</button>
+              <button id="save-btn">Save</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="user-cards">
+      <div class="card-item">
+        <h4>User Alpha</h4>
+        <p>
+          Alpha texts here! Alpha texts here! Alpha texts here! Alpha texts
+          here! Alpha texts here! Alpha texts here!
+        </p>
+      </div>
+      <div class="card-item">
+        <h4>User Bravo</h4>
+        <p>Note: the following are just for beta testing.</p>
+      </div>
+      <div class="card-item">
+        <h4>User Charlie</h4>
+        <p>Data on Charlie.</p>
+      </div>
+      <div class="card-item">
+        <h4>User Delta</h4>
+        <p>
+          There's a lot of info on Delta. There's a lot of info on Delta.
+          There's a lot of info on Delta. Redundant yes, but lot's of data.
+        </p>
+      </div>
+      <div class="card-item">
+        <h4>User Echo</h4>
+        <p>The following will surely echo... echo... echo...</p>
+      </div>
+      <div class="card-item">
+        <h4>User Foxtrot</h4>
+        <p>The quick brown fox jumps over the lazy dog.</p>
+      </div>
+      <div class="card-item">
+        <h4>User Gamma</h4>
+        <p>Classified and encrypted: #$02 fqwlk&3 90@#$^#3 90fdke$ 5^#12d</p>
+      </div>
     </section>
   </body>
 </html>
